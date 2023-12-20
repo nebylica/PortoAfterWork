@@ -127,6 +127,8 @@ main {
   backdrop-filter: blur(5.6px);
   -webkit-backdrop-filter: blur(5.6px);
   border: 1px solid #31313190;
+  pointer-events: none;
+  cursor: default;
 }
 
 .info-button:hover {
@@ -136,7 +138,7 @@ main {
 }
 
 .past-events-container {
-  margin: 0 0 100px;
+  margin: 100px 0;
 }
 
 .past-event {
@@ -330,6 +332,7 @@ footer p {
   }
 
   .partners-logos {
+    justify-content: start;
     gap: 60px;
   }
 
