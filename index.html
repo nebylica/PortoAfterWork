@@ -48,10 +48,21 @@
       </div>
     </header>
     <main>
+      <video
+        autoplay
+        muted
+        loop
+        poster="assets/video-poster.png"
+        class="background-video"
+      >
+        <source src="assets/video.webm" type="video/webm" />
+        <source src="assets/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <img
-        src="assets/video.gif"
-        alt="Background video"
-        id="background-video"
+        src="assets/bg-image.webp"
+        alt="Background image"
+        class="background-image"
       />
       <div class="background-blur"></div>
       <div class="info-container">
@@ -62,12 +73,7 @@
           Join us for engaging conversations and meaningful connections in a
           warm, relaxed atmosphere.
         </p>
-        <a
-          href=""
-          target="_blank"
-          class="info-button"
-          >NEXT EVENT SOON</a
-        >
+        <a href="" target="_blank" class="info-button">NEXT EVENT SOON</a>
       </div>
       <div class="partners-container">
         <h2 class="section-heading">Our partners</h2>

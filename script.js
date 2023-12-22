@@ -1,3 +1,14 @@
+function media() {
+  const video = document.querySelector(".background-video");
+  const image = document.querySelector(".background-image");
+
+  if (window.innerWidth < 600) {
+    if (video) video.remove();
+  } else {
+    if (image) image.remove();
+  }
+}
+
 function pastEventButtons() {
   const pastEventCard = document.querySelectorAll(".past-event");
   pastEventCard.forEach((item) => {
@@ -15,3 +26,4 @@ function pastEventButtons() {
 }
 
 pastEventButtons();
+media();
