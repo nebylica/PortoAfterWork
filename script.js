@@ -1,11 +1,15 @@
-function media() {
-  const video = document.querySelector(".background-video");
-  const image = document.querySelector(".background-image");
+function setDynamicBackground() {
+  const backgroundImage = document.querySelector(".background-image");
+  const backgroundVideo = document.querySelector(".background-video");
 
   if (window.innerWidth < 600) {
-    if (video) video.remove();
+    backgroundImage.style.display = "block";
+    backgroundVideo.style.display = "none";
+    backgroundVideo.pause();
+    backgroundVideo.currentTime = 0;
   } else {
-    if (image) image.remove();
+    backgroundImage.style.display = "none";
+    backgroundVideo.style.display = "block";
   }
 }
 
@@ -25,5 +29,5 @@ function pastEventButtons() {
   });
 }
 
+setDynamicBackground();
 pastEventButtons();
-media();
