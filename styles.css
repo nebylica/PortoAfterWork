@@ -129,8 +129,6 @@ main {
   backdrop-filter: blur(5.6px);
   -webkit-backdrop-filter: blur(5.6px);
   border: 1px solid #31313190;
-  pointer-events: none;
-  cursor: default;
 }
 
 .info-button:hover {
