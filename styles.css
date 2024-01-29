@@ -307,7 +307,7 @@ footer p {
 
   .past-event {
     height: 75px;
-    width: 160px;
+    width: 360px;
     padding: 40px 20px;
     transition: flex-grow 0.3s ease-in;
   }
